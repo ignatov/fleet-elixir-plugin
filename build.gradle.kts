@@ -6,19 +6,19 @@ repositories {
 plugins {
     kotlin("jvm") version "1.8.0"
     `kotlin-dsl`
-    id("org.jetbrains.fleet-plugin") version "0.1.30"
+    id("org.jetbrains.fleet-plugin") version "0.1.31"
 }
 
 version = "0.1.0"
 
 fleet {
-    fleetVersion.set("1.17.20")
+    fleetVersion.set("1.17.23")
     useNightlyBuilds.set(true)
 
     // presentation
     vendor.set("Sergey Ignatov")
-    readableName.set("Fleet Sample Plugin")
-    descriptor.set("A description for sample plugin")
+    readableName.set("Elixir")
+    descriptor.set("Elixir support")
 
     workspace {
         // workspace dependencies
@@ -33,5 +33,8 @@ fleet {
     }
 
     // required plugins
-    // plugins.addAll("fleet.run")
+    plugins.addAll(
+      "fleet.lsp",
+      "fleet.code" // publish code
+    )
 }

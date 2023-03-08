@@ -1,7 +1,8 @@
-module fleet.sample.common {
-    requires fleet.rhizomedb;
-    requires kotlin.stdlib;
-    requires fleet.kernel;
+module fleet.elixir.common {
+  requires fleet.rhizomedb;
+  requires kotlin.stdlib;
+  requires fleet.kernel;
+  requires fleet.common;
 
-    exports fleet.sample.common;
+  exports fleet.elixir.common;
 }

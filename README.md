@@ -1,11 +1,6 @@
-# Fleet Plugin Template
+# Elixir support for Fleet
 
-This is a template for developing a JetBrains Fleet plugin. 
-The plugin can be used to enhance the functionality of the Fleet IDE.
-
-## Getting Started
-
-To create a new plugin using this template, you can either clone the repository or use the "Use this template" button on GitHub to create a new repository based on this template.
+This is a plugin that brings Elixir supoprt to JetBrains Fleet.
 
 ## Building and Running the Plugin
 
